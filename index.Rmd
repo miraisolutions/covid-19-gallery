@@ -1,0 +1,24 @@
+---
+title: "COVID-19 Resource Gallery"
+site: rmdgallery::gallery_site
+---
+
+<h1>COVID-19 Resource Gallery</h1>
+
+This gallery includes the following resources:
+
+```{r, echo=FALSE}
+meta <- rmdgallery::gallery_site_config()$gallery$meta
+htmltools::tags$ul(
+  lapply(names(meta), function(name) {
+    href <- sprintf("%s.html", name)
+    with(meta[[name]], {
+      htmltools::tags$li(
+        htmltools::a(href = href, title),
+        "by", author, 
+        "[", htmltools::a("source", href = url, target = "_blank", .noWS = "outside"), "]"
+      )
+    })
+  })
+)
+```

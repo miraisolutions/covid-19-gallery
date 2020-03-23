@@ -1,0 +1,8 @@
+---
+title: "About This Website"
+---
+
+<h1>About This Website</h1>
+
+This website includes a gallery of embedded pages constructed in a dynamic way based on JSON metadata, using the `gallery_site()` generator provided by package [**rmdgallery**](https://github.com/riccardoporreca/rmdgallery#readme) and rendered via `rmarkdown::render_site()`.
+

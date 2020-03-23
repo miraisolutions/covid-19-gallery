@@ -1,0 +1,35 @@
+name: "covid-19-resource-gallery"
+output:
+  html_document:
+    css: styles.css
+navbar:
+  title: "COVID-19 Resource Gallery"
+  type: inverse
+  left:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+    - text: "About"
+      icon: fa-info
+      href: about.html
+  right:
+    - text: "GitHub"
+      icon: fa-github
+      href: https://github.com/miraisolutions/COVID-19-resource-gallery
+exclude: "DESCRIPTION"
+gallery:
+  navbar:
+    left:
+      - text: "Gallery"
+        icon: fa-gear
+  include_before: |
+    {{htmltools::tagList(
+        htmltools::h3(title, style = htmltools::css(display = "inline")),
+        htmltools::tags$em("by", author),
+        htmltools::tags$sup(
+          "[", htmltools::a("source", href = url, target = "_blank", .noWS = "outside"), "]"
+        ),
+        htmltools::hr()
+    )}}
+  include_after: |
+    <hr/>© {{format(Sys.Date(), "%Y")}} Mirai Solutions GmbH<hr/>

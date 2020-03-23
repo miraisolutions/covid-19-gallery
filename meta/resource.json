@@ -1,0 +1,21 @@
+{
+  "mirai-covid-19": {
+    "title":  "Covid19 Shiny App",
+    "author": "Mirai Solutions GmbH",
+    "url": "https://github.com/miraisolutions/Covid19",
+    "menu_entry": "Mirai Covid19",
+    "template": "embed-url",
+    "content": "https://miraisolutions.shinyapps.io/covid19"
+  },
+  "jhu-covid-19": {
+    "title":  "Covid19 JHU Dashboard",
+    "author": "Johns Hopkins University Center for Systems Science and Engineering",
+    "url": "https://coronavirus.jhu.edu/",
+    "menu_entry": "JHU Covid19",
+    "template": "embed-url",
+    "content": "https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6",
+    "css": {
+      "height": "80vh"
+    }
+  }
+}

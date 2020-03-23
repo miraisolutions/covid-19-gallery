@@ -1,0 +1,27 @@
+/* Full-width callery container */
+
+.gallery-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+/* Do not display the custom title header: it is re-created inside each page */
+#header {
+  display: none;
+}
+
+/* Customized style for the before and after elements and their content */
+
+.gallery-before, .gallery-after  {
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+.gallery-before hr, .gallery-after hr {
+  margin: 10px 0;
+}
+.gallery-before .h3 {
+  padding: 0 10px;
+}
+
