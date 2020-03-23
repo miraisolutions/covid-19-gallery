@@ -44,7 +44,7 @@ jobs:
         shell: Rscript {0}
 
       - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/master__'
+        if: github.ref == 'refs/heads/master'
         uses: crazy-max/ghaction-github-pages@v1.3.0
         with:
           target_branch: gh-pages
