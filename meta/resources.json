@@ -32,10 +32,10 @@
   "swiss-covid-19": {
     "title":  "Covid19 Swiss Dashboard",
     "author": "Daniel Probst",
-    "url": "https://www.corona-data.ch/",
+    "url": "https://github.com/daenuprobst/covid19-cases-switzerland",
     "menu_entry": "Swiss Covid19",
     "template": "embed-url",
-    "content": "source https://github.com/daenuprobst/covid19-cases-switzerland",
+    "content": "https://www.corona-data.ch/",
     "css": {
       "height": "80vh"
     }
