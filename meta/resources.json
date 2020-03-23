@@ -13,10 +13,7 @@
     "url": "https://coronavirus.jhu.edu/",
     "menu_entry": "JHU Covid19",
     "template": "embed-url",
-    "content": "https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6",
-    "css": {
-      "height": "80vh"
-    }
+    "content": "https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
   },
   "italy-covid-19": {
     "title":  "Covid19 Italy Dashboard",
@@ -24,10 +21,7 @@
     "url": " https://github.com/pcm-dpc/COVID-19",
     "menu_entry": "Italy Covid19",
     "template": "embed-url",
-    "content": "http://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/b0c68bce2cce478eaac82fe38d4138b1",
-    "css": {
-      "height": "80vh"
-    }
+    "content": "http://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/b0c68bce2cce478eaac82fe38d4138b1"
   },
   "swiss-covid-19": {
     "title":  "Covid19 Swiss Dashboard",
@@ -35,9 +29,6 @@
     "url": "https://github.com/daenuprobst/covid19-cases-switzerland",
     "menu_entry": "Swiss Covid19",
     "template": "embed-url",
-    "content": "https://www.corona-data.ch/",
-    "css": {
-      "height": "80vh"
-    }
+    "content": "https://www.corona-data.ch/"
   }
 }
