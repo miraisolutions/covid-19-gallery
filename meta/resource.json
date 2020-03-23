@@ -17,5 +17,27 @@
     "css": {
       "height": "80vh"
     }
+  },
+  "italy-covid-19": {
+    "title":  "Covid19 Italy Dashboard",
+    "author": "Protezione Civile Italiana",
+    "url": " https://github.com/pcm-dpc/COVID-19",
+    "menu_entry": "Italy Covid19",
+    "template": "embed-url",
+    "content": "http://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/b0c68bce2cce478eaac82fe38d4138b1",
+    "css": {
+      "height": "80vh"
+    }
+  },
+  "jhu-covid-19": {
+    "title":  "Covid19 Swiss Dashboard",
+    "author": "Daniel Probst",
+    "url": "https://www.corona-data.ch/",
+    "menu_entry": "Swiss Covid19",
+    "template": "embed-url",
+    "content": "source https://github.com/daenuprobst/covid19-cases-switzerland",
+    "css": {
+      "height": "80vh"
+    }
   }
 }
