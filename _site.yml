@@ -1,4 +1,4 @@
-name: "covid-19-resource-gallery"
+name: "covid-19-gallery"
 output:
   html_document:
     css: styles.css
@@ -15,7 +15,7 @@ navbar:
   right:
     - text: "GitHub"
       icon: fa-github
-      href: https://github.com/miraisolutions/COVID-19-resource-gallery
+      href: https://github.com/miraisolutions/covid-19-gallery
 exclude: "DESCRIPTION"
 gallery:
   navbar:
