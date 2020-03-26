@@ -18,7 +18,7 @@
   "pcm-dpc-covid-19-italy": {
     "title":  "COVID-19 Italy Dashboard",
     "author": "Dipartimento della Protezione Civile",
-    "url": " https://github.com/pcm-dpc/COVID-19",
+    "url": "https://github.com/pcm-dpc/COVID-19",
     "menu_entry": "Italy COVID-19",
     "template": "embed-url",
     "content": "http://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/b0c68bce2cce478eaac82fe38d4138b1"
