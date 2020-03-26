@@ -30,5 +30,13 @@
     "menu_entry": "Switzerland COVID-19",
     "template": "embed-url",
     "content": "https://www.corona-data.ch/"
+  },
+  "worldometers-coronavirus": {
+    "title":  "COVID-19 Worldometers Data",
+    "author": "worldometers.info",
+    "url": "https://www.worldometers.info/coronavirus/",
+    "menu_entry": "Worldometers COVID-19",
+    "template": "embed-url",
+    "content": "https://www.worldometers.info/coronavirus/"
   }
 }
