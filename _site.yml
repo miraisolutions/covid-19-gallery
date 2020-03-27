@@ -35,6 +35,6 @@ gallery:
     <hr/>
     &copy; {{format(Sys.Date(), "%Y")}}
     <a href="https://mirai-solutions.ch" target="_blank">Mirai Solutions GmbH</a>
-    - <em>Created with <a href="https://github.com/riccardoporreca/rmdgallery#readme" target="_blank">rmdgallery</a>
+    - <em>Created with <a href="https://riccardoporreca.github.io/rmdgallery" target="_blank">rmdgallery</a>
     {{utils::packageVersion("rmdgallery")}}</em>
     <hr/>
