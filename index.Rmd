@@ -5,14 +5,22 @@ site: rmdgallery::gallery_site
 
 <h1>COVID-19 Resource Gallery</h1>
 
-This gallery includes the following resources:
+The goal of this gallery is to show an example of how a page can be created with [R Markdown website](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html) based on [JSON metadata](meta/resources.json) and then converted to static website using R package [**rmdgallery**](https://riccardoporreca.github.io/rmdgallery). See the [ReadMe](https://github.com/miraisolutions/covid-19-gallery) on our github page.
+
+This project collects a number of useful on-line resources (dashboards, web apps, ...) around the COVID-19 pandemic embedded in a common gallery website.
+
+
+### Global dashboards
+
+This gallery includes the following resources that analyse Covid-19 data globally:
 
 ```{r, echo=FALSE}
 meta <- rmdgallery::gallery_site_config()$gallery$meta
+global_meta <- meta[grepl("^global-", names(meta))]
 htmltools::tags$ul(
-  lapply(names(meta), function(name) {
+  lapply(names(global_meta), function(name) {
     href <- sprintf("%s.html", name)
-    with(meta[[name]], {
+    with(global_meta[[name]], {
       htmltools::tags$li(
         htmltools::a(href = href, title),
         "by", author, 
@@ -22,3 +30,178 @@ htmltools::tags$ul(
   })
 )
 ```
+
+### Switzerland
+
+This gallery includes the following resources that analyse Covid-19 Swiss data:
+
+
+```{r, echo=FALSE}
+swiss_meta <- meta[grepl("^switzerland-", names(meta))]
+htmltools::tags$ul(
+  lapply(names(swiss_meta), function(name) {
+    href <- sprintf("%s.html", name)
+    with(swiss_meta[[name]], {
+      htmltools::tags$li(
+        htmltools::a(href = href, title),
+        "by", author, 
+        "[", htmltools::a("source", href = url, target = "_blank", .noWS = "outside"), "]"
+      )
+    })
+  })
+)
+```
+
+### USA
+
+This gallery includes the following resources that analyse Covid-19 American data:
+
+
+```{r, echo=FALSE}
+usa_meta <- meta[grepl("^usa-", names(meta))]
+htmltools::tags$ul(
+  lapply(names(usa_meta), function(name) {
+    href <- sprintf("%s.html", name)
+    with(usa_meta[[name]], {
+      htmltools::tags$li(
+        htmltools::a(href = href, title),
+        "by", author, 
+        "[", htmltools::a("source", href = url, target = "_blank", .noWS = "outside"), "]"
+      )
+    })
+  })
+)
+```
+
+### Italy
+
+This gallery includes the following resources that analyse Covid-19 Italian data:
+
+
+```{r, echo=FALSE}
+italy_meta <- meta[grepl("^italy-", names(meta))]
+htmltools::tags$ul(
+  lapply(names(italy_meta), function(name) {
+    href <- sprintf("%s.html", name)
+    with(italy_meta[[name]], {
+      htmltools::tags$li(
+        htmltools::a(href = href, title),
+        "by", author, 
+        "[", htmltools::a("source", href = url, target = "_blank", .noWS = "outside"), "]"
+      )
+    })
+  })
+)
+```
+
+### Germany
+
+This gallery includes the following resources that analyse Covid-19 German data:
+
+
+```{r, echo=FALSE}
+germany_meta <- meta[grepl("^germany-", names(meta))]
+htmltools::tags$ul(
+  lapply(names(germany_meta), function(name) {
+    href <- sprintf("%s.html", name)
+    with(germany_meta[[name]], {
+      htmltools::tags$li(
+        htmltools::a(href = href, title),
+        "by", author, 
+        "[", htmltools::a("source", href = url, target = "_blank", .noWS = "outside"), "]"
+      )
+    })
+  })
+)
+```
+
+### UK
+
+This gallery includes the following resources that analyse Covid-19 data from the United Kingdom:
+
+
+```{r, echo=FALSE}
+uk_meta <- meta[grepl("^uk-", names(meta))]
+htmltools::tags$ul(
+  lapply(names(uk_meta), function(name) {
+    href <- sprintf("%s.html", name)
+    with(uk_meta[[name]], {
+      htmltools::tags$li(
+        htmltools::a(href = href, title),
+        "by", author, 
+        "[", htmltools::a("source", href = url, target = "_blank", .noWS = "outside"), "]"
+      )
+    })
+  })
+)
+```
+
+### France
+
+This gallery includes the following resources that analyse French Covid-19 data:
+
+
+```{r, echo=FALSE}
+france_meta <- meta[grepl("^france-", names(meta))]
+htmltools::tags$ul(
+  lapply(names(france_meta), function(name) {
+    href <- sprintf("%s.html", name)
+    with(france_meta[[name]], {
+      htmltools::tags$li(
+        htmltools::a(href = href, title),
+        "by", author, 
+        "[", htmltools::a("source", href = url, target = "_blank", .noWS = "outside"), "]"
+      )
+    })
+  })
+)
+```
+
+### Denmark
+
+This gallery includes the following resources that analyse Danish Covid-19 data:
+
+
+```{r, echo=FALSE}
+dk_meta <- meta[grepl("^dk-", names(meta))]
+htmltools::tags$ul(
+  lapply(names(dk_meta), function(name) {
+    href <- sprintf("%s.html", name)
+    with(dk_meta[[name]], {
+      htmltools::tags$li(
+        htmltools::a(href = href, title),
+        "by", author, 
+        "[", htmltools::a("source", href = url, target = "_blank", .noWS = "outside"), "]"
+      )
+    })
+  })
+)
+```
+
+### Austria
+
+This gallery includes the following resources that analyse Danish Covid-19 data:
+
+
+```{r, echo=FALSE}
+austria_meta <- meta[grepl("^austria-", names(meta))]
+htmltools::tags$ul(
+  lapply(names(austria_meta), function(name) {
+    href <- sprintf("%s.html", name)
+    with(austria_meta[[name]], {
+      htmltools::tags$li(
+        htmltools::a(href = href, title),
+        "by", author, 
+        "[", htmltools::a("source", href = url, target = "_blank", .noWS = "outside"), "]"
+      )
+    })
+  })
+)
+```
+
+### Contact
+
+If you would like to have more sources listed please open an issue in our [github page](https://github.com/miraisolutions/covid-19-gallery/issues) or contact us at contact@mirai-solutions.com.
+
+To learn how to create a dashboard using R Shiny please see our [workshop page](https://mirai-solutions.ch/services/workshops/). 
+
