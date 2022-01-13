@@ -5,8 +5,6 @@ Version: 1.1.2
 Authors@R: 
     c(person("Riccardo", "Porreca", role = c("cre", "aut"),
              email = "riccardo.porreca@mirai-solutions.com"),
-      person("Francesca", "Vitalini", role = "aut",
-             email = 'francesca.vitalini@mirai-solutions.com'),
       person("Mirai Solutions GmbH", role = "cph",
              email = "info@mirai-solutions.com"))
 Description: Collect a number of useful on-line resources (dashboards, web apps,
