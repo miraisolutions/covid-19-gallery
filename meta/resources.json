@@ -157,7 +157,7 @@
     "url": "https://www.sst.dk/da/corona/tal-og-overvaagning#5",
     "menu_entry": "Denmark COVID-19",
     "template": "embed-url",
-    "content": "https://www.sst.dk/en/English/Corona-eng/Status-of-the-epidemic/COVID-19-updates-Statistics-and-charts"
+    "content": "https://sst.dk/en/English/Corona-eng/Status-of-the-epidemic/COVID-19-updates-Statistics-and-charts"
   },
   "austria-gov-coronavirus-data": {
     "title":  "COVID-19 Austria Dashboard",
@@ -165,6 +165,6 @@
     "url": "https://covid19-dashboard.ages.at/",
     "menu_entry": "Austria COVID-19",
     "template": "embed-url",
-    "content": "www.covid19-dashboard.ages.at/"
+    "content": "https://covid19-dashboard.ages.at/"
   }
 }
