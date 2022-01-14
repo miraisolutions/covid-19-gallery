@@ -43,7 +43,7 @@
     "title":  "COVID-19 Switzerland Dashboard",
     "author": "BAG",
     "url": "https://opendata.swiss/en/dataset/covid-19-schweiz/",
-    "menu_entry": "Switzerland BAG COVID-19",
+    "menu_entry": "Switzerland COVID-19 BAG",
     "template": "embed-url",
     "content": "https://covid19.admin.ch/en/overview/"
   },
@@ -67,9 +67,9 @@
     "title":  "COVID-19 Kanton Zurich Dashboard",
     "author": "Kanton ZH Statistiches Amt",
     "url": "https://zh.ch/de/politik-staat/opendata.html?keyword=ogd#/details/671@gesundheitsdirektion-kanton-zuerich/",
-    "menu_entry": "ZH COVID-19 Switzerland",
+    "menu_entry": "Switzerland COVID-19 ZH",
     "template": "embed-url",
-    "content": "https://zh.ch/de/gesundheit/coronavirus/zahlen-fakten-covid-19.html?keyword=covid19#-2101896056/"
+    "content": "https://www.zh.ch/de/gesundheit/coronavirus/zahlen-fakten-covid-19.html"
   },
     "global-eth-corona-data-ch": {
     "title":  "COVID-19 Global Shiny Dashboard",
@@ -107,7 +107,7 @@
     "title":  "COVID-19 Germany Dashboard",
     "author": "Robert Koch Institute (RKI)",
     "url": "https://npgeo-corona-npgeo-de.hub.arcgis.com/",
-    "menu_entry": "RKI COVID-19",
+    "menu_entry": "Germany COVID-19 RKI",
     "template": "embed-url",
     "content": "https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4/"
   },
@@ -115,7 +115,7 @@
     "title":  "COVID-19 United Kingdom Dashboard",
     "author": "UK Health Security Agency",
     "url": "https://coronavirus.data.gov.uk/",
-    "menu_entry": "GOV.UK COVID-19",
+    "menu_entry": "UK COVID-19 GOV",
     "template": "embed-url",
     "content": "https://coronavirus.data.gov.uk/"
   },
@@ -123,15 +123,15 @@
     "title":  "COVID-19 United Kingdom Dashboard",
     "author": "Office for National Statistics",
     "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/articles/coronaviruscovid19/latestinsights",
-    "menu_entry": "ONS UK COVID-19",
+    "menu_entry": "UK COVID-19 ONS",
     "template": "embed-url",
-    "content": "https://coronavirus.data.gov.uk/"
+    "content": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/"
   },
   "usa-cnn-coronavirus-data": {
     "title":  "COVID-19 USA Dashboard",
     "author": "CNN",
     "url": "https://github.com/CSSEGISandData/COVID-19",
-    "menu_entry": "CNN USA COVID-19",
+    "menu_entry": "USA COVID-19 CNN",
     "template": "embed-url",
     "content": "https://edition.cnn.com/interactive/2020/health/coronavirus-us-maps-and-cases/"
   },
@@ -139,7 +139,7 @@
     "title":  "COVID-19 USA Dashboard",
     "author": "Prevent Epidemics",
     "url": "https://preventepidemics.org/covid19/indicators/",
-    "menu_entry": "Prevent Epidemics USA COVID-19",
+    "menu_entry": "USA COVID-19 Prevent Epidemics",
     "template": "embed-url",
     "content": "https://preventepidemics.org/covid19/indicators/"
   },
@@ -155,16 +155,16 @@
     "title":  "COVID-19 Denmark Dashboard",
     "author": "Danish Health Authority",
     "url": "https://www.sst.dk/da/corona/tal-og-overvaagning#5",
-    "menu_entry": "DK COVID-19",
+    "menu_entry": "Denmark COVID-19",
     "template": "embed-url",
-    "content": "https://www.sst.dk/da/corona/tal-og-overvaagning#5"
+    "content": "https://www.sst.dk/en/English/Corona-eng/Status-of-the-epidemic/COVID-19-updates-Statistics-and-charts"
   },
   "austria-gov-coronavirus-data": {
     "title":  "COVID-19 Austria Dashboard",
     "author": "Österreichische Agentur für Gesundheit und Ernährungssicherheit GmbH",
     "url": "https://covid19-dashboard.ages.at/",
-    "menu_entry": "AT COVID-19",
+    "menu_entry": "Austria COVID-19",
     "template": "embed-url",
-    "content": "https://covid19-dashboard.ages.at/"
+    "content": "www.covid19-dashboard.ages.at/"
   }
 }
