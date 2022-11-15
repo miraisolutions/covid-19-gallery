@@ -40,7 +40,7 @@
     "content": "https://lab.gedidigital.it/gedi-visual/2020/coronavirus-i-contagi-in-italia/"
   },
   "switzerland-bag-corona-data-ch": {
-    "title":  "COVID-19 Switzerland Dashboard",
+    "title":  "COVID-19 Switzerland BAG Dashboard",
     "author": "BAG",
     "url": "https://opendata.swiss/en/dataset/covid-19-schweiz/",
     "menu_entry": "Switzerland COVID-19 BAG",
