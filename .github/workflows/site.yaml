@@ -1,55 +1,54 @@
-on: [push, pull_request]
+# Workflow inspired by https://github.com/actions/starter-workflows/tree/main/pages
 
 name: Website
 
+on: [push, pull_request]
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
+  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Setup version-stable R 4.2.1
         uses: r-lib/actions/setup-r@v2
         with:
           r-version: 4.2.1
-
-      - name: Query dependencies
-        run: |
-          install.packages("remotes")
-          saveRDS(remotes::dev_package_deps(dependencies = TRUE), "depends.Rds", version = 2)
-        shell: Rscript {0}
-
-      - name: Cache R packages
-        uses: actions/cache@v3
-        with:
-          path: ${{ env.R_LIBS_USER }}
-          key: ${{ runner.os }}-r-${{ hashFiles('depends.Rds') }}
-          restore-keys: ${{ runner.os }}-r-
-
-      - name: Install system dependencies
-        env:
-          RHUB_PLATFORM: linux-x86_64-ubuntu-gcc
-        run: |
-          Rscript -e "remotes::install_github('r-hub/sysreqs')"
-          sysreqs=$(Rscript -e "cat(sysreqs::sysreq_commands('DESCRIPTION'))")
-          sudo -s eval "$sysreqs"
-
-      - name: Install dependencies
-        run: |
-          remotes::install_deps(dependencies = TRUE)
-        shell: Rscript {0}
-
+          use-public-rspm: true
+      - name: Install and cache dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v2
       - name: Build site
         run: |
           rmarkdown::render_site()
         shell: Rscript {0}
+      - name: Upload artifact
+        # Automatically uploads an artifact from the './_site' directory by default
+        uses: actions/upload-pages-artifact@v1
 
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/master' }}
+    needs: build
+    steps:
       - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/master'
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: gh-pages
-          build_dir: _site
-        env:
-          GITHUB_TOKEN: ${{ secrets.GHPAGES_DEPLOY_TOKEN }}
+        id: deployment
+        uses: actions/deploy-pages@v1
