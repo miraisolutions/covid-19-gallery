@@ -61,6 +61,7 @@ switzerland-kanton-zh-corona-data-ch:
   menu_entry: "Switzerland COVID-19 ZH"
   template: "embed-url"
   content: "https://www.zh.ch/de/gesundheit/coronavirus/zahlen-fakten-covid-19.html"
+# ok terms and conditions
 global-eth-corona-data-ch:
   title: "COVID-19 Global Shiny Dashboard"
   author: "ETH Zurich"
@@ -117,13 +118,14 @@ usa-cnn-coronavirus-data:
   menu_entry: "USA COVID-19 CNN"
   template: "embed-url"
   content: "https://edition.cnn.com/interactive/2020/health/coronavirus-us-maps-and-cases/"
-usa-preventepidemics-coronavirus-data:
-  title: "COVID-19 USA Dashboard"
-  author: "Prevent Epidemics"
-  url: "https://preventepidemics.org/covid19/indicators/"
-  menu_entry: "USA COVID-19 Prevent Epidemics"
-  template: "embed-url"
-  content: "https://preventepidemics.org/covid19/indicators/"
+# against terms and conditions
+# usa-preventepidemics-coronavirus-data:
+#   title: "COVID-19 USA Dashboard"
+#   author: "Prevent Epidemics"
+#   url: "https://preventepidemics.org/covid19/indicators/"
+#   menu_entry: "USA COVID-19 Prevent Epidemics"
+#   template: "embed-url"
+#   content: "https://preventepidemics.org/covid19/indicators/"
 france-gov-coronavirus-data:
   title: "COVID-19 France Dashboard"
   author: "Ministère des Solidarités et de la Santé et Santé publique France"
