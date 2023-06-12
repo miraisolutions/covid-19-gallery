@@ -5,7 +5,7 @@ site: rmdgallery::gallery_site
 
 <h1>COVID-19 Resource Gallery</h1>
 
-The goal of this gallery is to show an example of how a page can be created with [R Markdown website](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html) based on [JSON metadata](meta/resources.json) and then converted to static website using R package [**rmdgallery**](https://riccardoporreca.github.io/rmdgallery). See the [ReadMe](https://github.com/miraisolutions/covid-19-gallery) on our github page.
+The goal of this gallery is to show an example of how a page can be created with [R Markdown website](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html) based on [YML metadata](meta/resources.yml) and then converted to static website using R package [**rmdgallery**](https://riccardoporreca.github.io/rmdgallery). See the [ReadMe](https://github.com/miraisolutions/covid-19-gallery) on our github page.
 
 This project collects a number of useful on-line resources (dashboards, web apps, ...) around the COVID-19 pandemic embedded in a common gallery website.
 

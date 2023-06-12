@@ -6,7 +6,7 @@
 
 This project collects a number of useful on-line resources (dashboards, web apps, ...) around the COVID-19 pandemic embedded in a common gallery website.
 
-The gallery is rendered as an [R Markdown website](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html) based on [JSON metadata](meta/resources.json), converted to static website pages using the `gallery_site()` generator provided by package [**rmdgallery**](https://riccardoporreca.github.io/rmdgallery).
+The gallery is rendered as an [R Markdown website](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html) based on [YML metadata](meta/resources.yml), converted to static website pages using the `gallery_site()` generator provided by package [**rmdgallery**](https://riccardoporreca.github.io/rmdgallery).
 
 The website is automatically built and deployed to GitHub Pages using [Actions](https://help.github.com/en/actions), and can be accessed at https://mirai-solutions.ch/covid-19-gallery.
 
