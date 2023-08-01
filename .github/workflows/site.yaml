@@ -33,7 +33,7 @@ jobs:
         shell: Rscript {0}
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
 
   # Deployment job
   deploy:
