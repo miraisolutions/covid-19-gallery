@@ -1,7 +1,7 @@
 # COVID-19 Resource Gallery
 
 <!-- badges: start -->
-[![Website build status](https://github.com/miraisolutions/covid-19-gallery/workflows/Website/badge.svg)](https://github.com/miraisolutions/covid-19-gallery/actions)
+[![site](https://github.com/miraisolutions/covid-19-gallery/actions/workflows/site.yaml/badge.svg)](https://github.com/miraisolutions/covid-19-gallery/actions/workflows/site.yaml)
 <!-- badges: end -->
 
 This project collects a number of useful on-line resources (dashboards, web apps, ...) around the COVID-19 pandemic embedded in a common gallery website.
