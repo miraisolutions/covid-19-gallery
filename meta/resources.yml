@@ -4,7 +4,7 @@ global-mirai-covid-19:
   url: "https://github.com/miraisolutions/Covid19#readme"
   menu_entry: "Mirai Covid19"
   template: "embed-url"
-  content: "https://miraisolutions.shinyapps.io/covid19"
+  content: "https://covid19.azurewebsites.net"
 global-jhu-covid-19-global:
   title: "COVID-19 Global Dashboard"
   author: "Johns Hopkins University Center for Systems Science and Engineering"
